@@ -1,11 +1,10 @@
 # Banking-Churn-Prediction
 
 deployment link:[banking-churn-prediction ∙ main ∙ app.py](https://banking-churn-prediction-4rvifp8vqsuxmkgdt2v4ry.streamlit.app/)
+
 ## Demo
 
-[(https://github.com/edaUsha/Banking-Churn-Prediction/releases/download/v1.0/demo.mp4)](https://github.com/edaUsha/Banking-Churn-Prediction/releases/download/video/Banking.Churn.Prediction.Streamlit.-.Comet.2026-05-16.09-04-00.mp4)
-
-
+https://github.com/edaUsha/Banking-Churn-Prediction/releases/download/video/Banking.Churn.Prediction.Streamlit.-.Comet.2026-05-16.09-04-00.mp4
 
 An end-to-end predictive analytics application built to identify customers at high risk of churn using machine learning and statistical analysis.
 
@@ -44,5 +43,4 @@ This project combines descriptive analytics, multivariate statistical analysis, 
 
 ## Business Objective
 
-The application is designed to help financial institutions identify potential churners early, optimize customer retention strategies, reduce revenue loss, and support data-driven business decision[...]
-
+The application is designed to help financial institutions identify potential churners early, optimize customer retention strategies, reduce revenue loss, and support data-driven business decision-making.
