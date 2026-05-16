@@ -4,7 +4,10 @@ deployment link:[banking-churn-prediction ∙ main ∙ app.py](https://banking-c
 
 ## Demo
 
-https://github.com/edaUsha/Banking-Churn-Prediction/releases/download/video/Banking.Churn.Prediction.Streamlit.-.Comet.2026-05-16.09-04-00.mp4
+<video width="100%" controls>
+  <source src="https://github.com/edaUsha/Banking-Churn-Prediction/releases/download/video/Banking.Churn.Prediction.Streamlit.-.Comet.2026-05-16.09-04-00.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 An end-to-end predictive analytics application built to identify customers at high risk of churn using machine learning and statistical analysis.
 
