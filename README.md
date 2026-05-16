@@ -3,7 +3,7 @@
 deployment link:[banking-churn-prediction ∙ main ∙ app.py](https://banking-churn-prediction-4rvifp8vqsuxmkgdt2v4ry.streamlit.app/)
 ## Demo
 
-[![Watch the demo](https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg)](https://github.com/edaUsha/Banking-Churn-Prediction/releases/download/v1.0/demo.mp4)
+[Watch the demo](https://github.com/edaUsha/Banking-Churn-Prediction/releases/download/v1.0/demo.mp4)
 
 
 
@@ -44,4 +44,5 @@ This project combines descriptive analytics, multivariate statistical analysis, 
 
 ## Business Objective
 
-The application is designed to help financial institutions identify potential churners early, optimize customer retention strategies, reduce revenue loss, and support data-driven business decisions through interpretable predictive analytics.
+The application is designed to help financial institutions identify potential churners early, optimize customer retention strategies, reduce revenue loss, and support data-driven business decision[...]
+
