@@ -3,7 +3,7 @@
 deployment link:[banking-churn-prediction ∙ main ∙ app.py](https://banking-churn-prediction-4rvifp8vqsuxmkgdt2v4ry.streamlit.app/)
 ## Demo
 
-[Watch the demo](https://github.com/edaUsha/Banking-Churn-Prediction/releases/download/v1.0/demo.mp4)
+[(https://github.com/edaUsha/Banking-Churn-Prediction/releases/download/v1.0/demo.mp4)](https://github.com/edaUsha/Banking-Churn-Prediction/releases/download/video/Banking.Churn.Prediction.Streamlit.-.Comet.2026-05-16.09-04-00.mp4)
 
 
 
