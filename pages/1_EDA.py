@@ -58,12 +58,11 @@ with col2:
     fig,ax=plt.subplots(figsize=(8,4))
 
     if biv_analysis=="Numerical vs Churn":
-        # Create a grouped bar chart for numerical vs churn
-        churn_data = df.groupby(target)[biv_col].mean().reset_index()
-        sns.barplot(data=churn_data, x=target, y=biv_col, ax=ax)
-        ax.set_title(f"Average {biv_col} by {target}")
+        # Create a boxplot for numerical vs churn
+        sns.boxplot(data=df, x=target, y=biv_col, ax=ax)
+        ax.set_title(f"{biv_col} by {target}")
         ax.set_xlabel(target)
-        ax.set_ylabel(f"Average {biv_col}")
+        ax.set_ylabel(biv_col)
         
     else:
         sns.countplot(data=df, x=biv_col, hue=target, ax=ax)
