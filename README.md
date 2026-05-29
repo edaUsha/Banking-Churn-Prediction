@@ -8,20 +8,17 @@ deployment link:[banking-churn-prediction ∙ main ∙ app.py](https://banking-c
   Your browser does not support the video tag.
 </video>
 
-An end-to-end predictive analytics application built to identify customers at high risk of churn using machine learning and statistical analysis.
-
-This project combines descriptive analytics, multivariate statistical analysis, predictive modeling, and business-focused risk segmentation to help banks proactively retain valuable customers.
 
 
 ## 1. Background and Overview
 
-Customer churn — the decision by a customer to close their account and leave — is one of the most costly challenges facing retail banks today. Acquiring a new customer costs five to seven times more than retaining an existing one, making churn prevention a critical lever for sustainable growth and profitability.
+Customer churn — the decision by a customer to close their account and leave — is one of the most costly challenges facing retail banks today. Acquiring a new customer costs five to seven times more than retaining an existing one.
 
 This project addresses a direct business question: **Which customers are most likely to leave, and what can the bank do about it before they do?**
 
-Using a dataset of 10,000 bank customers, this analysis builds a predictive model that identifies high-risk customers before they churn, enabling the bank to intervene proactively with targeted retention strategies. The model is designed not just to predict churn, but to surface the underlying drivers — so business teams can act on real insight, not just a risk score.
+Using a dataset of 10,000 bank customers, this analysis builds a predictive model that identifies high-risk customers before they churn, enabling the bank to intervene proactively with targeted retention strategies.
 
----
+
 
 ## 2. Data Structure Overview
 
@@ -46,26 +43,16 @@ The analysis is based on a complete dataset of **10,000 customer records** with 
 
 The dataset reflects a **realistic churn imbalance** — roughly 1 in 5 customers churned — consistent with industry norms in retail banking.
 
----
+
 
 ## 3. Executive Summary
 
-This project developed a machine learning model to predict which bank customers are at risk of churning. After evaluating multiple modelling approaches, **XGBoost with optimised class-balance tuning** was selected as the final model, delivering the strongest performance across all key metrics.
+This project developed a machine learning model to predict which bank customers are at risk of churning.
 
-**Model Performance at a Glance:**
+Older customers were more likely to leave the bank, and customers in Germany had the highest churn rate among all regions. Customers who used fewer bank products or were less active also showed a greater tendency to churn. These patterns suggest the bank should pay special attention to customer groups that may need more support, better service, or more suitable offers.
 
-| Metric | Score | Business Meaning |
-|---|---|---|
-| AUC-ROC | **0.8933** | The model correctly ranks a churner above a non-churner 89% of the time |
-| Recall | **0.8930** | 89% of customers who will churn are correctly identified |
-| Precision | 0.4152 | Of all customers flagged, 42% will actually churn |
-| F1 Score | 0.5668 | Balanced measure of precision and recall |
+After evaluating multiple modelling approaches, **XGBoost with optimised class-balance tuning** emerged as the highest-performing solution.
 
-> **Why Recall was prioritised:** In a churn prevention context, missing a churner (false negative) is far more costly than flagging a loyal customer for a retention offer (false positive). The model was deliberately calibrated — with a lowered prediction threshold of 0.40 — to capture as many true churners as possible. The cost of a retention offer is a fraction of the cost of losing a customer entirely.
-
-The model enables the bank to **flag roughly 9 in 10 at-risk customers** before they leave, giving relationship managers and marketing teams a clear, actionable target list.
-
----
 
 ## 4. Insights Deep Dive
 
@@ -135,7 +122,6 @@ Counter-intuitively, customers holding 3 or more bank products churn at extremel
 
 **Business implication:** This is a red flag for cross-selling strategy. Customers loaded with multiple products may feel over-sold, under-served, or locked into products that do not meet their needs. This finding warrants a review of cross-sell practices and product experience for high-product-count customers.
 
----
 
 ## 5. Recommendations
 
@@ -153,12 +139,38 @@ Customers aged 45 and above are disproportionately represented in churn. A dedic
 **4. Investigate the Female Customer Experience**
 A 10-percentage-point churn gap between female and male customers is significant and warrants structured investigation. Customer satisfaction surveys, focus groups, or product usage analysis segmented by gender should be conducted to identify and address the root cause.
 
-**5. Audit Cross-Selling Practices for High-Product Customers**
-Customers with 3 or more products are churning at near-total rates. This strongly suggests product dissatisfaction or a mis-sold product experience. A structured review of this segment — including exit interview data if available — is recommended before continuing aggressive cross-sell campaigns.
 
-**6. Deploy the Predictive Model as a Retention Tool**
-The XGBoost model (AUC-ROC: 0.8933, Recall: 0.8930) is production-ready. Integrating it into CRM workflows would allow relationship managers to see a real-time churn risk score for every customer, enabling proactive outreach before a customer decides to leave — rather than after.
+## 6. Key Features
 
----
+* Interactive exploratory data analysis (EDA) dashboard
+* Customer churn probability prediction using XGBoost
+* Risk segmentation into Low, Medium, and High-risk customers
+* Portfolio-level churn monitoring
+* Individual customer risk lookup
+* Feature-engineered behavioral and demographic analysis
+* Downloadable filtered customer risk reports
+* Business-oriented retention insights and recommendations
 
-*Analysis conducted using Python. Model developed with XGBoost, optimised for high recall to minimise missed churners. Visualisations produced via dashboard to support business review and stakeholder presentation.*
+## Machine Learning & Statistical Workflow
+
+* Descriptive and multivariate statistical analysis
+* Feature engineering and categorical segmentation
+* One-hot encoding and preprocessing pipeline
+* Logistic Regression baseline modeling
+* Random Forest and XGBoost comparison
+* ROC-AUC, Recall, Precision, and F1-score evaluation
+* Threshold-based risk scoring for business decision-making
+
+## Technologies Used
+
+* Python
+* Streamlit
+* Pandas
+* NumPy
+* Scikit-learn
+* XGBoost
+* Seaborn & Matplotlib
+
+## Business Objective
+
+The application is designed to help financial institutions identify potential churners early, optimize customer retention strategies, reduce revenue loss, and support data-driven business decision-making at scale. This is a **board-ready, revenue-focused tool** that translates machine learning insights into shareholder value.
